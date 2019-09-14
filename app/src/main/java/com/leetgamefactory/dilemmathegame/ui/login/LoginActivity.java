@@ -34,7 +34,7 @@ import java.util.Map;
 public class LoginActivity extends AppCompatActivity {
 
     FirebaseDatabase fDB = FirebaseDatabase.getInstance();
-
+    DatabaseReference dbRef = fDB.getReference();
 
     private LoginViewModel loginViewModel;
 
@@ -44,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         Toast.makeText(this, "Deneme", Toast.LENGTH_SHORT).show();
 
-        DatabaseReference dbRef = fDB.getReference();
+
 
         dbRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -157,5 +157,11 @@ public class LoginActivity extends AppCompatActivity {
 
     private void showLoginFailed(@StringRes Integer errorString) {
         Toast.makeText(getApplicationContext(), errorString, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        dbRef.child("Users/1/Name").setValue("melabalar");
     }
 }
