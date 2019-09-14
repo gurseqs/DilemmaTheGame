@@ -162,6 +162,6 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
-        dbRef.child("Users/1/Name").setValue("melabalar");
+        dbRef.child("Users/1/Name").setValue("annecim");
     }
 }
