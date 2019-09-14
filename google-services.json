@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1075115643694",
+    "firebase_url": "https://dilemma-the-game-8edc4.firebaseio.com",
+    "project_id": "dilemma-the-game-8edc4",
+    "storage_bucket": "dilemma-the-game-8edc4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075115643694:android:7f4588f7bccd1b465aa0bf",
+        "android_client_info": {
+          "package_name": "com.leetgamefactory.DilemmaTheGame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075115643694-l7p714e8kcpr3nb24ct81nu5a1lugmbd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1PHMBtrqHDzrC9EXABE6C51fI4seXDCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075115643694-l7p714e8kcpr3nb24ct81nu5a1lugmbd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075115643694:android:4741a7f798996c045aa0bf",
+        "android_client_info": {
+          "package_name": "com.leetgamefactory.dilemmathegame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075115643694-l7p714e8kcpr3nb24ct81nu5a1lugmbd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1PHMBtrqHDzrC9EXABE6C51fI4seXDCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075115643694-l7p714e8kcpr3nb24ct81nu5a1lugmbd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

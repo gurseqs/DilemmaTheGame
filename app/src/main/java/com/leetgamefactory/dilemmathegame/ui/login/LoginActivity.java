@@ -33,6 +33,9 @@ import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity {
 
+    FirebaseDatabase fDB = FirebaseDatabase.getInstance();
+
+
     private LoginViewModel loginViewModel;
 
     @Override
@@ -41,15 +44,13 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         Toast.makeText(this, "Deneme", Toast.LENGTH_SHORT).show();
 
-        FirebaseDatabase fDB = FirebaseDatabase.getInstance();
         DatabaseReference dbRef = fDB.getReference();
 
         dbRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot child : dataSnapshot.getChildren()) {
-                    String value = child.getValue(String.class);
-                    Log.d("AA", "Value is: " + value);
+                    //Toast.makeText(this, "AAAAA", Toast.LENGTH_SHORT).show();
                 }
 
             }
